@@ -1,0 +1,207 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.cart-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+.cart-navbar {
+    display: flex;
+    position: absolute; /* Change fixed to absolute */
+    top: 0; /* Align it to the top */
+    right: 0; /* Align it to the right */
+    background: linear-gradient(90deg, #007bff, #6a5acd); /* Gradient background */
+    color: white;
+    padding: 10px 30px; /* Padding for height adjustment */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: auto; /* Set width to auto to prevent stretching */
+    z-index: 1000;
+    margin-right: 0px; /* Optional: Add right margin for spacing */
+}
+
+
+
+
+/* Link Group Styling */
+.link-group {
+    display: flex; /* Use flex to arrange links in a row */
+    align-items: center; /* Center links vertically */
+    gap: 15px; /* Space between links */
+}
+
+/* Search Input Styling */
+.search-input {
+    padding: 8px; /* Padding for the input */
+    border-radius: 50px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    margin-left: 20px; /* Space between input and store icon */
+    width: 200px; /* Set a width for the input */
+    transition: border 0.3s; /* Smooth transition for border */
+}
+
+.search-input:focus {
+    border: 1px solid #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+
+/* Store Icon Styling */
+.store-icon {
+    font-size: 2rem; /* Icon size */
+    padding: 10px; /* Padding around the icon */
+    border-radius: 50%; /* Circular background */
+    background: linear-gradient(45deg, #ff6f61, #ffcc33); /* Attractive gradient */
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transition */
+}
+
+.store-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background: linear-gradient(45deg, #ffcc33, #ff6f61); /* Change gradient on hover */
+}
+
+/* Navbar Brand */
+.cart-navbar .navbar-brand {
+    font-size: 1.2rem; /* Adjust brand font size if necessary */
+    color: white;
+    text-decoration: none;
+}
+
+.cart-navbar .navbar-brand:hover {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
+}
+
+/* Navbar Links */
+.cart-navbar .navbar-link {
+    font-size: 1rem; /* Adjust link font size */
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-left: 15px; /* Add margin between links */
+}
+
+.cart-navbar .navbar-link:hover {
+    color: #ffca28; /* Change color on hover */
+}
+/* Navbar Styling */
+.cart-navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #007bff, #6a5acd); /* Gradient background */
+    color: white;
+    padding: 10px 30px; /* Reduced padding for height adjustment */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Search Input Styling */
+.cart-search-input {
+    padding: 8px; /* Padding for the input */
+    border-radius: 50px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    margin-left: 20px; /* Space between input and store icon */
+    width: 200px; /* Set a width for the input */
+    transition: border 0.3s; /* Smooth transition for border */
+}
+
+.cart-search-input:focus {
+    border: 1px solid #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Store Icon Styling */
+.cart-store-icon {
+    font-size: 2rem; /* Icon size */
+    padding: 10px; /* Padding around the icon */
+    border-radius: 50%; /* Circular background */
+    background: linear-gradient(45deg, #ff6f61, #ffcc33); /* Attractive gradient */
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transition */
+}
+
+.cart-store-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background: linear-gradient(45deg, #ffcc33, #ff6f61); /* Change gradient on hover */
+}
+
+/* Cart Item Styling */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; /* Background for cart items */
+    border: 1px solid #e1e1e1; /* Border for items */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px 0; /* Spacing between items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.cart-image {
+    width: 80px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.cart-item h3 {
+    font-size: 1.5rem; /* Font size for item name */
+    margin: 0 10px; /* Spacing between elements */
+}
+
+.cart-item p {
+    margin: 0; /* Remove margin */
+}
+
+/* Button Styles */
+.remove-from-cart {
+    background-color: #ff5252; /* Red background for removal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.remove-from-cart:hover {
+    background-color: #ff1744; /* Darker red on hover */
+}
+.cart-product-list-section{
+padding-top: 100px;
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .decrement-button,
+  .increment-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .decrement-button:hover,
+  .increment-button:hover {
+    background-color: #e63939;
+  }
+  
+  .quantity-controls span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

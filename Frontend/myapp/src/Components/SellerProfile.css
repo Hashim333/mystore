@@ -1,0 +1,147 @@
+.seller-profile-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.seller-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links .link-group .navbar-link {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.seller-profile-content {
+  margin: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seller-info {
+  margin-bottom: 20px;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.product-item {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error-message,
+.no-products-message,
+.no-seller-message {
+  text-align: center;
+  color: red;
+}
+.navbar-brand{
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff6f61, #ffcc33);
+  transition: transform 0.3s ease;
+}
+/* Container for the SellerAuth component */
+.seller-auth-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form Title */
+.seller-auth-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Fields */
+.seller-auth-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.seller-auth-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seller-auth-button:hover {
+  background-color: #0056b3;
+}
+
+/* Message Display */
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.message.success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+/* Toggle Form Link */
+.switch-auth-mode {
+  margin-top: 10px;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.switch-auth-mode:hover {
+  text-decoration: underline;
+}

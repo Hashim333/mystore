@@ -1,0 +1,229 @@
+/* Prd.css */
+
+/* General container styling for the product page */
+.product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 110px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+ .product-image-container {
+    margin-bottom: 20px;
+    position: relative;
+    width: 300px; 
+} 
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+.size-button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .size-button.selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .size-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+
+.wishlist-overlay {
+    position: absolute; /* This allows positioning relative to the .product-image-container */
+    top: -10px; /* Adjust distance from the top edge of the image */
+    right: -10px; /* Adjust distance from the right edge of the image */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Ensures it appears above the image */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.wishlist-overlay:hover {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+ .heart-icon {
+    font-size: 24px;
+    color: red;
+}
+
+ Product details styling
+.product-details {
+    text-align: center;
+}
+
+.product-name {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-price, 
+.product-category, 
+.product-quantity {
+    font-size: 1.2rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+/* Actions (wishlist and cart buttons) */
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.add-to-cart-button, .buy-button {
+    margin-right: -10px; /* Moves the buttons to the right */
+    margin-top: 10px;
+}
+
+.buy-button {
+    border: none;
+    color: #f81111;
+    background-color: transparent; /* Keep background transparent */
+    cursor: pointer;
+    font-size: 2rem; /* Icon size */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.buy-button:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+/* .add-to-wishlist {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}  */
+
+.add-to-cart-button {
+    border: none;
+    background-color: transparent; /* Keep background transparent */
+    cursor: pointer;
+    font-size: 2rem; /* Icon size */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.add-to-cart-button:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+.add-to-wishlist:hover, 
+.add-to-cart-button:hover {
+    transform: scale(1.2); /* Make buttons bigger on hover */
+}
+
+.add-to-wishlist.added .heart-icon {
+    color: #ff5252; /* Red heart when added to wishlist */
+}
+
+.add-to-wishlist .heart-icon {
+    color: #ccc; /* Grey heart when not added */
+}
+
+.add-to-cart-button .cart-icon {
+    color: #28a745; /* Green cart icon */
+}
+
+.add-to-cart-button.added .cart-icon {
+    color: #dc3545; /* Red cart icon when item is added */
+}
+
+/* Button hover effects */
+.add-to-wishlist:hover .heart-icon, 
+.add-to-cart-button:hover .cart-icon {
+    color: #f39c12; /* Yellow on hover */
+}
+
+/* Add shadow to buttons */
+.add-to-wishlist, 
+.add-to-cart-button {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-wishlist:active, 
+.add-to-cart-button:active {
+    transform: scale(0.9); /* Click effect */
+}
+
+
+/* Ensure the whole product section is responsive */
+@media screen and (max-width: 600px) {
+    .wishlist-overlay {
+        top: 5px;
+        right: 5px;
+        padding: 8px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image-container {
+        width: 100%;
+    }
+
+    .product-name {
+        font-size: 1.5rem;
+    }
+
+    .product-price,
+    .product-category,
+    .product-quantity {
+        font-size: 1rem;
+    }
+
+    .add-to-cart-button,
+    .buy-button,
+    .wishlist-overlay {
+        font-size: 1.5rem;
+    }
+}

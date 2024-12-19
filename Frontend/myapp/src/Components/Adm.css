@@ -1,0 +1,131 @@
+/* Container styling */
+.about-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+.admin-prd{
+    padding-top: 70px;
+}
+
+/* Title styling */
+.about-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 25px;
+}
+
+/* Section titles */
+.section-heading {
+    display: block;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/* Paragraph styling */
+.about-text {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Team names styling */
+.team-member {
+    display: inline-block;
+    color: #0073e6;
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+/* List styling */
+.team-list {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.team-list-item {
+    margin: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #333;
+}
+
+.team-list-item::before {
+    content: "🌟";
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    color: #0073e6;
+}
+
+/* Community section styling */
+.community-message {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Product list positioning */
+.product-list {
+    margin-top: 40px;
+}
+.home-wraper {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar .navbar-link:hover {
+    color: #f0a500;
+  }
+  
+  .admin-sellers {
+    padding: 20px;
+  }
+  
+  .seller-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .seller-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .seller-details p {
+    margin: 5px 0;
+  }
+  

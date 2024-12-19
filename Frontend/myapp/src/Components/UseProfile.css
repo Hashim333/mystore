@@ -1,0 +1,47 @@
+.user-profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-details {
+    margin-bottom: 20px;
+  }
+  
+  .order-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-list li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+  }
+  .seller-profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    /* margin-top: 100; */
+    padding-top: 100px;
+}
+.buy-now-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .buy-now-button:hover {
+    background-color: #0056b3;
+  }
+  

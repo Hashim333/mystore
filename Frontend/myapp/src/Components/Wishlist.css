@@ -1,0 +1,337 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar Styling */
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #007bff, #6a5acd); /* Gradient background */
+    color: white;
+    padding: 10px 30px; /* Reduced padding for height adjustment */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Link Group Styling */
+.link-group {
+    display: flex; /* Use flex to arrange links in a row */
+    align-items: center; /* Center links vertically */
+    gap: 15px; /* Space between links */
+}
+
+/* Search Input Styling */
+.search-input {
+    padding: 8px; /* Padding for the input */
+    border-radius: 50px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    margin-left: 20px; /* Space between input and store icon */
+    width: 200px; /* Set a width for the input */
+    transition: border 0.3s; /* Smooth transition for border */
+}
+
+.search-input:focus {
+    border: 1px solid #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+
+/* Store Icon Styling */
+.store-icon {
+    font-size: 2rem; /* Icon size */
+    padding: 10px; /* Padding around the icon */
+    border-radius: 50%; /* Circular background */
+    background: linear-gradient(45deg, #ff6f61, #ffcc33); /* Attractive gradient */
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transition */
+}
+
+.store-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    background: linear-gradient(45deg, #ffcc33, #ff6f61); /* Change gradient on hover */
+}
+
+/* Navbar Brand */
+.navbar .navbar-brand {
+    font-size: 1.2rem; /* Adjust brand font size if necessary */
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand:hover {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
+}
+
+/* Navbar Links */
+.navbar .navbar-link {
+    font-size: 1rem; /* Adjust link font size */
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-left: 15px; /* Add margin between links */
+}
+
+.navbar .navbar-link:hover {
+    color: #ffca28; /* Change color on hover */
+}
+
+/* Other styles remain unchanged... */
+
+
+/* Styling for the Heart Icon */
+.wishlist-heart {
+    font-size: 3rem; /* Heart icon size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-icon {
+    color: red; /* Heart color */
+    font-size: 3rem; /* Enlarging the heart icon */
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out; /* Smoother transition */
+}
+
+.heart-icon:hover {
+    transform: scale(1.2); /* Enlarges on hover for interactivity */
+}
+
+/* Hero Section */
+/* .hero-section {
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 123, 255, 0.5), rgba(0, 123, 255, 0.5)); 
+    color: white;
+    padding: 60px 20px;
+} */
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    padding: 12px 25px;
+    background-color: #ffca28; /* Button color */
+    color: #7e7b7b;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease-in-out; /* Transition for hover effect */
+}
+
+.hero-button:hover {
+    background-color: #ff9800; /* Darker button color on hover */
+}
+
+/* Featured Products Section */
+.featured-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fa; /* Background color */
+}
+
+.featured-section h2 {
+    font-size: 2.5rem; /* Featured section title size */
+    margin-bottom: 40px;
+}
+
+.featured-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Gap between items */
+    padding: 0; /* No padding */
+    list-style: none; /* Remove list styles */
+}
+
+.featured-item {
+    background-color: #fff; /* Background color for items */
+    padding: 20px; /* Item padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Item shadow */
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Transition effects */
+}
+
+.featured-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.featured-image {
+    width: 100%; /* Full width image */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Cover image */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.product-button {
+    display: inline-block; /* Inline block */
+    margin-top: 10px; /* Margin */
+    padding: 10px 15px; /* Padding */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease-in-out; /* Transition for hover */
+}
+
+.product-button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+/* Product List Section */
+.product-list-section {
+    padding: 40px 20px; /* Section padding */
+}
+
+/* Product List Section */
+.product-list {
+    list-style-type: none; /* No list style */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Gap between items */
+    padding: 0; /* No padding */
+}
+
+.product-item {
+    background-color: #ffffff; /* Background color */
+    padding: 20px; /* Item padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+    text-align: center; /* Center text */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Vertical layout */
+    align-items: center; /* Center items */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Transition effects */
+    position: relative; /* Positioning */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.product-image {
+    width: 200px; /* Set desired width */
+    height: 250px; /* Set desired height */
+    object-fit: cover; /* Cover image */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+/* Wishlist Button */
+.add-to-wishlist {
+    position: absolute; /* Positioning */
+    top: 10px; /* Top spacing */
+    right: 10px; /* Right spacing */
+    background: none; /* No background */
+    border: none; /* No border */
+    font-size: 1.5rem; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    z-index: 10; /* Stays above other content */
+    opacity: 0; /* Invisible by default */
+    transition: opacity 0.5s ease; /* Transition for opacity */
+}
+
+.product-item:hover .add-to-wishlist {
+    opacity: 1; /* Visible on hover */
+}
+
+.add-to-wishlist .heart-icon {
+    font-size: 2rem; /* Heart icon size */
+    transition: transform 0.5s ease; /* Transition for hover effect */
+}
+
+.add-to-wishlist .heart-icon:hover {
+    transform: scale(1.2); /* Enlarges on hover */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #343a40; /* Footer background */
+    color: white; /* Footer text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding */
+}
+
+.footer p {
+    margin: 0; /* No margin */
+    font-size: 0.9rem; /* Smaller font size */
+}
+/* General Styles for Cart */
+.cart-count {
+    background-color: #f0067362;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    position: absolute;
+    top: -20px; /* Position slightly above */
+    right: -15px; /* Adjust right positioning to sit on the side of the icon */
+}
+.cart-icon-container {
+    position: relative; /* Ensure the cart count positions relative to the cart icon */
+    display: inline-flex; 
+    font-size: 1rem; /* Adjust link font size */
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-left: 15px;
+}
+.link-group, .cart-icon-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.store-icon, .cart-icon-container {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ff6f61, #ffcc33);
+    transition: transform 0.3s ease;
+}
+.add-to-cart-button.added {
+    background-color: #ff5733;
+    color: white;
+  }
+  
+  .add-to-cart-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+  }
+  
